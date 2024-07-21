@@ -22,7 +22,9 @@
         <h3 class="text-black text-xl font-semibold">{{ product.name }}</h3>
         <img [src]="product.image" height="150" alt="product.name" />
 
-        <p class="text-gray-600">{{ product.description }}</p>
+        <p class="text-gray-600 overflow-hidden flex flex-wrap">
+          {{ product.description }}
+        </p>
         <p class="text-gray-800 font-bold">
           {{ product.price | currencyFormat }}
         </p>
