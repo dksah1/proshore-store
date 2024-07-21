@@ -13,14 +13,14 @@
 
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
     <mat-card
-      class="example-card flex flex-col gap-5 p-6 bg-white shadow-lg rounded-lg"
+      class="example-card flex flex-col gap-5 p-4 bg-white shadow-lg rounded-lg"
       appearance="outlined"
       *ngFor="let product of filteredProducts"
       appHighlight
     >
-      <mat-card-content>
+      <mat-card-content class="p-0">
         <h3 class="text-black text-xl font-semibold">{{ product.name }}</h3>
-        <img [src]="product.image" alt="product.name" />
+        <img [src]="product.image" height="150" alt="product.name" />
 
         <p class="text-gray-600">{{ product.description }}</p>
         <p class="text-gray-800 font-bold">
