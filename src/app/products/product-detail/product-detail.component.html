@@ -1,0 +1,42 @@
+<div class="container mx-auto p-6">
+  <h2 class="text-3xl font-bold text-gray-800 mb-4">Product Details</h2>
+  <div *ngIf="product" class="bg-white shadow-lg rounded-lg p-6">
+    <div class="flex justify-around flex-col md:flex-row">
+      <div class="">
+        <h3 class="text-2xl font-semibold text-gray-700 px-5">
+          {{ product.name }}
+        </h3>
+        <img [src]="product.image" width="400" alt="" class="px-5" />
+      </div>
+      <div class="pt-16">
+        <p class="text-gray-600 mt-2">{{ product.description }}</p>
+        <p class="text-gray-800 font-bold mt-4">
+          {{ product.price | currencyFormat }}
+        </p>
+        <div class="flex justify-center mt-6 space-x-4">
+          <button
+            class="btn btn-outline-primary w-28 h-10 border border-blue-500 text-blue-500 rounded-lg hover:bg-blue-500 hover:text-white transition duration-300"
+          >
+            <a
+              [routerLink]="['/products', product.id, 'edit']"
+              class="block w-full h-full text-center pt-2"
+              >Edit</a
+            >
+          </button>
+          <button
+            class="btn btn-outline-primary w-28 h-10 border border-blue-500 text-blue-500 rounded-lg hover:bg-blue-500 hover:text-white transition duration-300"
+          >
+            <a
+              [routerLink]="['/products']"
+              class="block w-full h-full text-center pt-2"
+              >Go Back</a
+            >
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div *ngIf="!product" class="bg-red-100 text-red-600 p-4 rounded-lg mt-4">
+    <p>Product not found.</p>
+  </div> -->
+</div>

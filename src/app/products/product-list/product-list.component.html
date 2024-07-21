@@ -1,0 +1,54 @@
+<div class="container mx-auto p-6">
+  <app-product-search (search)="onSearch($event)"></app-product-search>
+
+  <div class="flex items-center justify-between my-4">
+    <h2 class="text-xl font-bold text-gray-800">Product List</h2>
+    <button
+      (click)="addProduct()"
+      class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300"
+    >
+      Add Product
+    </button>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <mat-card
+      class="example-card flex flex-col gap-5 p-6 bg-white shadow-lg rounded-lg"
+      appearance="outlined"
+      *ngFor="let product of filteredProducts"
+      appHighlight
+    >
+      <mat-card-content>
+        <h3 class="text-black text-xl font-semibold">{{ product.name }}</h3>
+        <img [src]="product.image" alt="product.name" />
+
+        <p class="text-gray-600">{{ product.description }}</p>
+        <p class="text-gray-800 font-bold">
+          {{ product.price | currencyFormat }}
+        </p>
+        <div class="flex items-center justify-between mt-4">
+          <button
+            mat-raised-button
+            aria-label="Button that displays a tooltip when focused or hovered over"
+            class="bg-blue-500 py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300"
+          >
+            <a
+              [routerLink]="['/products', product.id]"
+              class="hover:to-blue-100"
+              >View Details</a
+            >
+          </button>
+
+          <a
+            [routerLink]="['/products', product.id, 'edit']"
+            class="text-blue-500 hover:text-blue-600"
+          >
+            <mat-icon aria-hidden="false" aria-label="Example home icon"
+              >edit</mat-icon
+            >
+          </a>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
