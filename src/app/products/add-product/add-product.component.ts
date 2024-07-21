@@ -37,6 +37,8 @@ export class AddProductComponent implements OnInit {
   onSubmit(): void {
     if (this.productForm.valid) {
       const newProduct: Product = this.productForm.value;
+      newProduct.image =
+        'https://loremflickr.com/cache/resized/65535_52561637103_f30ca2bd13_b_640_480_nofilter.jpg';
       this.productService.addProduct(newProduct).subscribe(() => {
         this.router.navigate(['/products']);
       });
