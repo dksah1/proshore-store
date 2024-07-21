@@ -1,27 +1,78 @@
-# CrudApp
+# Proshore store README
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.1.
+## Project Overview
 
-## Development server
+This project is a demonstration for the interview task. It showcases the following features:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1. Display a list of products.
+2. Display details of a selected product.
+3. Form to create/edit a product.
+4. Search component to search product
+5. Use RxJS Observables and Operators
 
-## Code scaffolding
+## Project Demo
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Check out the live demo of the project here: [Project Demo URL](https://proshore-store.netlify.app)
 
-## Build
+## Project Screenshots
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Full View
 
-## Running unit tests
+![Screenshot](https://raw.githubusercontent.com/dksah1/proshore-store/3e3fd77964ff08aa7f4685f7f46d4c03ed540521/screenshots/ss-1.jpg)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![Screenshot](https://raw.githubusercontent.com/dksah1/proshore-store/3e3fd77964ff08aa7f4685f7f46d4c03ed540521/screenshots/ss-2.jpg)
 
-## Running end-to-end tests
+![Screenshot](https://raw.githubusercontent.com/dksah1/proshore-store/3e3fd77964ff08aa7f4685f7f46d4c03ed540521/screenshots/ss-3.jpg)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+![Screenshot](https://raw.githubusercontent.com/dksah1/proshore-store/3e3fd77964ff08aa7f4685f7f46d4c03ed540521/screenshots/ss-4.jpg)
 
-## Further help
+![Screenshot](https://raw.githubusercontent.com/dksah1/proshore-store/3e3fd77964ff08aa7f4685f7f46d4c03ed540521/screenshots/ss-5.jpg)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### Responsive View
+
+![Screenshot](https://raw.githubusercontent.com/dksah1/proshore-store/3e3fd77964ff08aa7f4685f7f46d4c03ed540521/screenshots/ss-6.jpg)
+
+![Screenshot](https://raw.githubusercontent.com/dksah1/proshore-store/3e3fd77964ff08aa7f4685f7f46d4c03ed540521/screenshots/ss-7.jpg)
+
+![Screenshot](https://raw.githubusercontent.com/dksah1/proshore-store/3e3fd77964ff08aa7f4685f7f46d4c03ed540521/screenshots/ss-8.jpg)
+
+![Screenshot](https://raw.githubusercontent.com/dksah1/proshore-store/3e3fd77964ff08aa7f4685f7f46d4c03ed540521/screenshots/ss-9.jpg)
+
+![Screenshot](https://raw.githubusercontent.com/dksah1/proshore-store/3e3fd77964ff08aa7f4685f7f46d4c03ed540521/screenshots/ss-10.jpg)
+
+## Installation
+
+To install and run this project locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/dksah1/proshore-store.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd proshore-store
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   ng serve
+   ```
+
+## Usage
+
+Once the project is up and running, you can access it at `http://localhost:4200`. Explore the features and functionality as per your requirements.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contact
+
+For any inquiries, please contact us at [dkshah634@gmail.com](mailto:dkshah634@gmail.com).
+
+---
+
+Thank you for checking out **Proshore store**!.
